@@ -1,0 +1,17 @@
+# Core
+pydub>=0.25.1          # audio I/O — delegates codec work to ffmpeg
+openai-whisper>=20231117  # speech-to-text with timestamps
+
+# Optional — faster inference (same API as openai-whisper)
+# faster-whisper>=0.10.0
+
+# Dev / test
+pytest>=7.4
+pytest-cov>=4.1
+
+# System requirement (not pip-installable):
+#   ffmpeg >= 4.x  — needed by pydub for MP3, AAC, OGG, FLAC, etc.
+#   Install via:
+#     macOS:   brew install ffmpeg
+#     Ubuntu:  apt-get install ffmpeg
+#     Windows: https://ffmpeg.org/download.html
